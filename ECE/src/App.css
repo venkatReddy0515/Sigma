@@ -1,0 +1,13 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #ff5eaa, #ef629f, #5333ed);
+    color: whitesmoke;
+    font-family: Arial, sans-serif; 
+    height: 100vh; 
+}
