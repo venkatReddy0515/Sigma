@@ -10,9 +10,9 @@ import { BiMenuAltRight } from "react-icons/bi";
 
 function Navbar() {
   gsap.registerPlugin(useGSAP);
-
+  const menu=useRef();
   useGSAP(() => {
-    // Initial animations
+    
     gsap.from(".back-ground img", {
       duration: 2,
       delay: 0,
@@ -23,7 +23,7 @@ function Navbar() {
       delay: 0,
       scale: 1.3,
     });
-    gsap.from(".section", {
+    gsap.from(".section111", {
       delay: 0.001,
       duration: 1.2,
       scale: 1.3,
@@ -59,6 +59,7 @@ function Navbar() {
     menu.addEventListener("mouseenter", () => menuHover.play());
     menu.addEventListener("mouseleave", () => menuHover.reverse());
   });
+  
 
   return (
     <div className="container">
@@ -70,7 +71,7 @@ function Navbar() {
         <div className="logo" id="section1">
           <img src={image2} alt="Logo" />
         </div>
-        <div className="section" id="section">
+        <div className="section111" id="section">
           <img src={image3} alt="Section Image" />
         </div>
         <div className="class">
@@ -80,9 +81,9 @@ function Navbar() {
             </div>
             <div className="menu">
               <h1>
-                <BiMenuAltRight />
+                <BiMenuAltRight/>
               </h1>
-              <ul>
+              <ul ref={menu}>
                 <li>HOME</li>
                 <li>EVENTS</li>
                 <li>SCHEDULE</li>

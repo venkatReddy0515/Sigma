@@ -6,7 +6,6 @@
 
 body {
   height: 100vh;
-  
   color: whitesmoke;
   font-family: Arial, sans-serif;
 }
@@ -88,13 +87,12 @@ nav ul{
   font-size:1.5rem;
   padding: 25px 0px;
   width: 0px;
-  background-color: #ef629f;
+  background: linear-gradient(to top, #de2c7f, #bf4379, #4f71d8);;
   position: absolute;
   top:-25px;
   right: -100px;
   height: 100vh;
-  z-index: 0;
-  
+  z-index: 15;
 }
 
 .menu {
@@ -139,7 +137,7 @@ nav ul li{
 #section{
   position: absolute;
   bottom: -3px;
-  z-index: 5;
+  z-index: 10;
   height: 237px;
   width: 100%;
 }
